@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sam Hajnasrollahi</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="contact.css">
+  <link rel="icon" href="Cartoon.png"/>
+</head>
+
+<body>
+
+
+  <header class="container1">
+   <div class="row">
+     <h1> Contact Me </h1>
+      <nav class="col-sm-8 text-right">
+        <a class="col-sm-8 text-right" href="index.html">
+  				<span class="media-body">Home</span>
+  			</a>
+        <a class="col-sm-8 text-right" href="Education.html">
+  				<span class="media-body">Education</span>
+  			</a>
+        <a class="col-sm-8 text-right" href="WorkExperience.html">
+  				<span class="media-body">Work Experience</span>
+  			</a>
+        <a class="col-sm-8 text-right" href="RnP.html">
+  				<span class="media-body">Research+Projects</span>
+  			</a>
+        <a class="col-sm-8 text-right" href="Resume.html">
+  				<span class="media-body">Resume</span>
+  			</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="jumbotron">
+   <div class="container">
+    </div>
+  </section>
+
+
+  <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+  <script type="text/javascript">
+  function ValidateForm(frm) {
+  if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+  if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+  if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+  if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+  return true; }
+  </script>
+
+
+  <table style="max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+  <tr> <td>
+  <label for="Name">Name*:</label>
+  </td> <td>
+  <input name="Name" type="text" maxlength="60" style="max-width:250px;" />
+  </td> </tr> <tr> <td>
+  <label for="PhoneNumber">Phone number:</label>
+  </td> <td>
+  <input name="PhoneNumber" type="text" maxlength="43" style="max-width:250px;" />
+  </td> </tr> <tr> <td>
+  <label for="FromEmailAddress">Email address*:</label>
+  </td> <td>
+  <input name="FromEmailAddress" type="text" maxlength="90" style="max-width:250px;" />
+  </td> </tr> <tr> <td>
+  <label for="Comments">Comments*:</label>
+  </td> <td>
+  <textarea name="Comments" rows="7" cols="40" style="max-width:350px;"></textarea>
+  </td> </tr> <tr> <td>
+  * - required fields
+  </td> <td>
+  <div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">Powered By</a></div>
+  <input name="skip_Submit" type="submit" value="Submit" />
+  <script src="https://www.100forms.com/js/FORMKEY:GTRNC8N3D9S2/SEND:samhajnasrollahi@hotmail.com" type="text/javascript"></script>
+  </td> </tr>
+
+  </table>
+  </form>
+
+</body>
+</html>
